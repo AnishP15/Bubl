@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fZw-kc-qMi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fZw-kc-qMi">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,11 +13,11 @@
             <objects>
                 <viewController id="fZw-kc-qMi" customClass="SignUpViewController" customModule="Bubl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i4C-py-QHA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XFE-W7-Ok4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-04-26 at 4.27.50 PM" translatesAutoresizingMaskIntoConstraints="NO" id="MuA-QQ-xVG">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
@@ -73,30 +74,29 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="continueTapped:" destination="fZw-kc-qMi" eventType="touchUpInside" id="ZuG-u7-gtV"/>
-                                                    <segue destination="jgT-nl-FMd" kind="presentation" identifier="signUptoMain" id="H6D-D9-ZXd"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
                                     </stackView>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="ZS2-4X-naa">
-                                        <rect key="frame" x="0.0" y="451.5" width="375" height="162.5"/>
+                                        <rect key="frame" x="0.0" y="451.5" width="375" height="177.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JTZ-gN-0wf">
-                                        <rect key="frame" x="0.0" y="622" width="375" height="25"/>
+                                        <rect key="frame" x="0.0" y="637" width="375" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="oYA-pE-AiL">
-                                                <rect key="frame" x="68.5" y="0.0" width="238" height="25"/>
+                                                <rect key="frame" x="68.5" y="0.0" width="238" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rr-Xz-1Sk">
-                                                        <rect key="frame" x="0.0" y="0.0" width="196" height="25"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="196" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyL-7E-eVj">
-                                                        <rect key="frame" x="200" y="0.0" width="38" height="25"/>
+                                                        <rect key="frame" x="200" y="0.0" width="38" height="30"/>
                                                         <state key="normal" title="Login">
                                                             <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -197,7 +197,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="continueTapped:" destination="vdJ-ih-Wv0" eventType="touchUpInside" id="GdG-3b-Wk9"/>
-                                                    <segue destination="jgT-nl-FMd" kind="presentation" identifier="loginToMain" id="1ob-bj-Rwj"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -225,7 +224,7 @@
                                                             <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="fZw-kc-qMi" kind="show" id="Gry-e8-fYy"/>
+                                                            <action selector="dismissTapped:" destination="vdJ-ih-Wv0" eventType="touchUpInside" id="pGe-tZ-80Q"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -253,36 +252,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w9S-DN-Uj2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="265" y="-317"/>
+            <point key="canvasLocation" x="247" y="-317"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Val-RW-X2Y">
+        <!--Navigation Controller-->
+        <scene sceneID="mqv-l3-QHU">
             <objects>
-                <viewController id="jgT-nl-FMd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6n4-Ld-J62">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make meaningful connections" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWT-l0-wlM">
-                                <rect key="frame" x="73" y="47" width="229" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="eUA-DE-kLU"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hFy-2U-Oz1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="p9I-i7-DxU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rq5-g8-3jg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iIW-N1-iMg" kind="relationship" relationship="rootViewController" id="Z0z-M9-z6w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dE-93-rHW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1272.8" y="-317.09145427286359"/>
+            <point key="canvasLocation" x="1622" y="-317"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="elv-30-b8h">
+            <objects>
+                <collectionViewController id="iIW-N1-iMg" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="QXg-Qv-fhP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rae-On-ieJ">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rpS-hs-0DX">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KxH-zL-0NP">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="iIW-N1-iMg" id="cZZ-3J-RmL"/>
+                            <outlet property="delegate" destination="iIW-N1-iMg" id="2Js-ZT-adx"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="E3l-Hj-58z"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vOp-Db-LnR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2298" y="-317"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="H6D-D9-ZXd"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2020-04-26 at 4.27.50 PM" width="466" height="586"/>
     </resources>

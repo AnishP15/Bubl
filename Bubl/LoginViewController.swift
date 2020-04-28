@@ -44,5 +44,9 @@ class LoginViewController: UIViewController {
         
     }
     
+    @IBAction func dismissTapped(_ sender: Any) {
+        dismiss(animated: false, completion: nil)
+    }
+    
 }
 
