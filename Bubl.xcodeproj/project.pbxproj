@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86F840EC2457EC70001458F4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F840EB2457EC70001458F4 /* HomeView.swift */; };
+		86F840EE2457EE33001458F4 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F840ED2457EE33001458F4 /* RoundButton.swift */; };
+		86F840F22457F07B001458F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86F840F12457F07B001458F4 /* GoogleService-Info.plist */; };
+		86F840F62457F5EE001458F4 /* ChatUIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F840F52457F5EE001458F4 /* ChatUIConfiguration.swift */; };
+		86F840F82457F5F7001458F4 /* ChatHostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F840F72457F5F7001458F4 /* ChatHostViewController.swift */; };
+		86F841072457F842001458F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F840FC2457F842001458F4 /* ViewController.swift */; };
+		86F841082457F842001458F4 /* ATCWalkthroughViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86F840FD2457F842001458F4 /* ATCWalkthroughViewController.xib */; };
+		86F841092457F842001458F4 /* ATCWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F840FE2457F842001458F4 /* ATCWalkthroughViewController.swift */; };
+		86F8410A2457F842001458F4 /* ATCClassicWalkthroughViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86F840FF2457F842001458F4 /* ATCClassicWalkthroughViewController.xib */; };
+		86F8410B2457F842001458F4 /* ATCClassicWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F841002457F842001458F4 /* ATCClassicWalkthroughViewController.swift */; };
+		86F8410C2457F842001458F4 /* ATCWalkthroughModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F841022457F842001458F4 /* ATCWalkthroughModel.swift */; };
+		86F8410D2457F842001458F4 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F841042457F842001458F4 /* UIColor.swift */; };
+		86F8410E2457F842001458F4 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F841052457F842001458F4 /* UIImage.swift */; };
+		86F8410F2457F842001458F4 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F841062457F842001458F4 /* UIViewController.swift */; };
 		B1519E1E5D6E8F8E630623F5 /* Pods_Bubl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21020AF4828F602580AF77F3 /* Pods_Bubl.framework */; };
 		F8A23EB12454D5270073DA2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A23EB02454D5270073DA2E /* AppDelegate.swift */; };
 		F8A23EB32454D5270073DA2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A23EB22454D5270073DA2E /* SceneDelegate.swift */; };
@@ -14,13 +28,26 @@
 		F8A23EB82454D5270073DA2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A23EB62454D5270073DA2E /* Main.storyboard */; };
 		F8A23EBA2454D5280073DA2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A23EB92454D5280073DA2E /* Assets.xcassets */; };
 		F8A23EBD2454D5280073DA2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A23EBB2454D5280073DA2E /* LaunchScreen.storyboard */; };
-		F8A23EEE24564B490073DA2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8A23EED24564B490073DA2E /* GoogleService-Info.plist */; };
 		F8A23EF02456547D0073DA2E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A23EEF2456547D0073DA2E /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21020AF4828F602580AF77F3 /* Pods_Bubl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bubl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B92F3BB57ADCA0F21904738 /* Pods-Bubl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubl.debug.xcconfig"; path = "Target Support Files/Pods-Bubl/Pods-Bubl.debug.xcconfig"; sourceTree = "<group>"; };
+		86F840EB2457EC70001458F4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		86F840ED2457EE33001458F4 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		86F840F12457F07B001458F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		86F840F52457F5EE001458F4 /* ChatUIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUIConfiguration.swift; sourceTree = "<group>"; };
+		86F840F72457F5F7001458F4 /* ChatHostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHostViewController.swift; sourceTree = "<group>"; };
+		86F840FC2457F842001458F4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86F840FD2457F842001458F4 /* ATCWalkthroughViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCWalkthroughViewController.xib; sourceTree = "<group>"; };
+		86F840FE2457F842001458F4 /* ATCWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCWalkthroughViewController.swift; sourceTree = "<group>"; };
+		86F840FF2457F842001458F4 /* ATCClassicWalkthroughViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCClassicWalkthroughViewController.xib; sourceTree = "<group>"; };
+		86F841002457F842001458F4 /* ATCClassicWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCClassicWalkthroughViewController.swift; sourceTree = "<group>"; };
+		86F841022457F842001458F4 /* ATCWalkthroughModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCWalkthroughModel.swift; sourceTree = "<group>"; };
+		86F841042457F842001458F4 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		86F841052457F842001458F4 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		86F841062457F842001458F4 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		ADCB39718635CEBBFEC16461 /* Pods-Bubl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubl.release.xcconfig"; path = "Target Support Files/Pods-Bubl/Pods-Bubl.release.xcconfig"; sourceTree = "<group>"; };
 		F8A23EAD2454D5270073DA2E /* Bubl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bubl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A23EB02454D5270073DA2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +57,6 @@
 		F8A23EB92454D5280073DA2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8A23EBC2454D5280073DA2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8A23EBE2454D5280073DA2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8A23EED24564B490073DA2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F8A23EEF2456547D0073DA2E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +72,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86F840F32457F5D4001458F4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F8A23EB42454D5270073DA2E /* LoginViewController.swift */,
+				F8A23EEF2456547D0073DA2E /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		86F840F42457F5D9001458F4 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				86F840F52457F5EE001458F4 /* ChatUIConfiguration.swift */,
+				86F840F72457F5F7001458F4 /* ChatHostViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		86F840FB2457F842001458F4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86F840FC2457F842001458F4 /* ViewController.swift */,
+				86F840FD2457F842001458F4 /* ATCWalkthroughViewController.xib */,
+				86F840FE2457F842001458F4 /* ATCWalkthroughViewController.swift */,
+				86F840FF2457F842001458F4 /* ATCClassicWalkthroughViewController.xib */,
+				86F841002457F842001458F4 /* ATCClassicWalkthroughViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		86F841012457F842001458F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86F841022457F842001458F4 /* ATCWalkthroughModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86F841032457F842001458F4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				86F841042457F842001458F4 /* UIColor.swift */,
+				86F841052457F842001458F4 /* UIImage.swift */,
+				86F841062457F842001458F4 /* UIViewController.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		B3EB5921D0EC7DA720496FAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,13 +160,18 @@
 			children = (
 				F8A23EB02454D5270073DA2E /* AppDelegate.swift */,
 				F8A23EB22454D5270073DA2E /* SceneDelegate.swift */,
-				F8A23EB42454D5270073DA2E /* LoginViewController.swift */,
-				F8A23EEF2456547D0073DA2E /* SignUpViewController.swift */,
+				86F840EB2457EC70001458F4 /* HomeView.swift */,
+				86F840ED2457EE33001458F4 /* RoundButton.swift */,
+				86F841032457F842001458F4 /* Helpers */,
+				86F841012457F842001458F4 /* Models */,
+				86F840FB2457F842001458F4 /* View Controllers */,
+				86F840F42457F5D9001458F4 /* Chat */,
+				86F840F32457F5D4001458F4 /* Auth */,
 				F8A23EB62454D5270073DA2E /* Main.storyboard */,
+				86F840F12457F07B001458F4 /* GoogleService-Info.plist */,
 				F8A23EB92454D5280073DA2E /* Assets.xcassets */,
 				F8A23EBB2454D5280073DA2E /* LaunchScreen.storyboard */,
 				F8A23EBE2454D5280073DA2E /* Info.plist */,
-				F8A23EED24564B490073DA2E /* GoogleService-Info.plist */,
 			);
 			path = Bubl;
 			sourceTree = "<group>";
@@ -158,7 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8A23EBD2454D5280073DA2E /* LaunchScreen.storyboard in Resources */,
-				F8A23EEE24564B490073DA2E /* GoogleService-Info.plist in Resources */,
+				86F8410A2457F842001458F4 /* ATCClassicWalkthroughViewController.xib in Resources */,
+				86F841082457F842001458F4 /* ATCWalkthroughViewController.xib in Resources */,
+				86F840F22457F07B001458F4 /* GoogleService-Info.plist in Resources */,
 				F8A23EBA2454D5280073DA2E /* Assets.xcassets in Resources */,
 				F8A23EB82454D5270073DA2E /* Main.storyboard in Resources */,
 			);
@@ -213,10 +294,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86F840EE2457EE33001458F4 /* RoundButton.swift in Sources */,
 				F8A23EB52454D5270073DA2E /* LoginViewController.swift in Sources */,
 				F8A23EB12454D5270073DA2E /* AppDelegate.swift in Sources */,
+				86F841072457F842001458F4 /* ViewController.swift in Sources */,
 				F8A23EF02456547D0073DA2E /* SignUpViewController.swift in Sources */,
+				86F8410C2457F842001458F4 /* ATCWalkthroughModel.swift in Sources */,
+				86F840F82457F5F7001458F4 /* ChatHostViewController.swift in Sources */,
+				86F840F62457F5EE001458F4 /* ChatUIConfiguration.swift in Sources */,
+				86F840EC2457EC70001458F4 /* HomeView.swift in Sources */,
+				86F8410D2457F842001458F4 /* UIColor.swift in Sources */,
+				86F841092457F842001458F4 /* ATCWalkthroughViewController.swift in Sources */,
+				86F8410B2457F842001458F4 /* ATCClassicWalkthroughViewController.swift in Sources */,
 				F8A23EB32454D5270073DA2E /* SceneDelegate.swift in Sources */,
+				86F8410E2457F842001458F4 /* UIImage.swift in Sources */,
+				86F8410F2457F842001458F4 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,9 +454,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q6N8V32LHK;
+				DEVELOPMENT_TEAM = JHGR88VG87;
 				INFOPLIST_FILE = Bubl/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,14 +474,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q6N8V32LHK;
+				DEVELOPMENT_TEAM = JHGR88VG87;
 				INFOPLIST_FILE = Bubl/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tech.Bubl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Bubl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

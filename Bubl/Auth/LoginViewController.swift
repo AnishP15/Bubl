@@ -27,7 +27,9 @@ class LoginViewController: UIViewController {
             if let password = passwordTextField.text {
                 Auth.auth().signIn(withEmail: email, password: password) { (auth, error) in
                     if error == nil{
-                        self.performSegue(withIdentifier: "loginToMain", sender: nil)
+                        //
+                        
+                        
                     }
                     else {
                         self.warningLabel.textColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
