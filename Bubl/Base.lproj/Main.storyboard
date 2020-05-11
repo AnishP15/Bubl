@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wel-WT-aS0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ytZ-Uj-rw4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="99" translatesAutoresizingMaskIntoConstraints="NO" id="iz4-eC-L7V">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="HhM-Hr-DKu">
                                         <rect key="frame" x="16" y="8" width="382" height="203"/>
@@ -36,7 +36,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="eju-d7-8OQ">
-                                        <rect key="frame" x="16" y="310" width="382" height="500"/>
+                                        <rect key="frame" x="16" y="310" width="382" height="456"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufI-BB-FLA">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
@@ -84,7 +84,7 @@
                                                 </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vN6-5I-c7T">
-                                                <rect key="frame" x="0.0" y="180" width="382" height="320"/>
+                                                <rect key="frame" x="0.0" y="180" width="382" height="276"/>
                                                 <color key="backgroundColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="By signing up, I agree to Bubl's ">
@@ -146,24 +146,392 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wvz-rF-vdG"/>
                     </view>
+                    <navigationItem key="navigationItem" id="UC8-gc-d3u"/>
                     <connections>
                         <outlet property="createAcct" destination="zMc-qj-BgZ" id="3BU-ax-pkL"/>
+                        <outlet property="textView" destination="vN6-5I-c7T" id="uLz-m2-D2c"/>
+                        <segue destination="JNS-Dp-PVh" kind="show" identifier="termsOfServiceViewController" id="CvC-ht-44b"/>
+                        <segue destination="57Y-9J-WWe" kind="show" identifier="privacyPolicyViewController" id="iYi-hm-uoQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Fb-pH-MmO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1465.217391304348" y="-301.33928571428572"/>
+            <point key="canvasLocation" x="-554" y="-317"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="92n-Co-RRS">
+            <objects>
+                <viewController id="JNS-Dp-PVh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pfm-IT-vXn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhi-lf-afc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">END USER LICENSE AGREEMENT
+
+Last updated May 09, 2020
+
+
+
+Bubl is licensed to You (End-User) by Bubl, located at 328 Ohlones Street, Fremont, California 94539, United States (hereinafter: Licensor), for use only under the terms of this License Agreement.
+
+By downloading the Application from the Apple AppStore, and any update thereto (as permitted by this License Agreement), You indicate that You agree to be bound by all of the terms and conditions of this License Agreement, and that You accept this License Agreement.
+
+The parties of this License Agreement acknowledge that Apple is not a Party to this License Agreement and is not bound by any provisions or obligations with regard to the Application, such as warranty, liability, maintenance and support thereof. Bubl, not Apple, is solely responsible for the licensed Application and the content thereof.
+
+This License Agreement may not provide for usage rules for the Application that are in conflict with the latest App Store Terms of Service. Bubl acknowledges that it had the opportunity to review said terms and this License Agreement is not conflicting with them.
+
+All rights not expressly granted to You are reserved.
+
+
+1. THE APPLICATION
+
+Bubl (hereinafter: Application) is a piece of software created to make personal connections with like minded people - and customized for Apple mobile devices. It is used to fill out a survey and match with people who answer similarly.
+
+The Application is not tailored to comply with industry-specific regulations (Health Insurance Portability and Accountability Act (HIPAA), Federal Information Security Management Act (FISMA), etc.), so if your interactions would be subjected to such laws, you may not use this Application. You may not use the Application in a way that would violate the Gramm-Leach-Bliley Act (GLBA).
+
+
+2. SCOPE OF LICENSE
+
+
+3. TECHNICAL REQUIREMENTS
+
+3.1  You acknowledge that it is Your responsibility to confirm and determine that the app end-user device on which You intend to use the Application satisfies the technical  specifications mentioned above.
+
+
+4. MAINTENANCE AND SUPPORT
+
+4.1  The Licensor is solely responsible for providing any maintenance and support services for this licensed Application. You can reach the Licensor at the email address listed in the App Store Overview for this licensed Application.
+
+4.2  Bubl and the End-User acknowledge that Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the licensed Application.
+
+
+5. LIABILITY
+
+5.1  Licensor takes no accountability or responsibility for any damages caused due to a breach of duties according to Section 2 of this Agreement. To avoid data loss, You are required to make use of backup functions of the Application to the extent allowed by applicable third-party terms and conditions of use. You are aware that in case of alterations or manipulations of the Application, You will not have access to licensed Application.
+
+
+6. WARRANTY
+
+6.1  Licensor warrants that the Application is free of spyware, trojan horses, viruses, or any other malware at the time of Your download. Licensor warrants that the Application works as described in the user documentation.
+
+6.2  No warranty is provided for the Application that is not executable on the device, that has been unauthorizedly modified, handled inappropriately or culpably, combined or installed with inappropriate hardware or software, used with inappropriate accessories, regardless if by Yourself or by third parties, or if there are any other reasons outside of Bubl's sphere of influence that affect the executability of the Application.
+
+6.3  You are required to inspect the Application immediately after installing it and notify Bubl about issues discovered without delay by e-mail provided in Product Claims. The defect report will be taken into consideration and further investigated if it has been mailed within a period of __________ days after discovery.
+
+6.4  If we confirm that the Application is defective, Bubl reserves a choice to remedy the situation either by means of solving the defect or substitute delivery.
+
+6.5  In the event of any failure of the Application to conform to any applicable warranty, You may notify the App-Store-Operator, and Your Application purchase price will be refunded to You. To the maximum extent permitted by applicable law, the App-Store-Operator will have no other warranty obligation whatsoever with respect to the App, and any other losses, claims, damages, liabilities, expenses and costs attributable to any negligence to adhere to any warranty.
+
+6.6  If the user is an entrepreneur, any claim based on faults expires after a statutory period of limitation amounting to twelve (12) months after the Application was made available to the user. The statutory periods of limitation given by law apply for users who are consumers.
+
+7. PRODUCT CLAIMS
+
+Bubl and the End-User acknowledge that Bubl, and not Apple, is responsible for addressing any claims of the End-User or any third party relating to the licensed Application or the End-User’s possession and/or use of that licensed Application, including, but not limited to:
+
+(i) product liability claims;
+
+(ii) any claim that the licensed Application fails to conform to any applicable legal or regulatory requirement; and
+
+(iii) claims arising under consumer protection, privacy, or similar legislation, including in connection with Your Licensed Application’s use of the HealthKit and HomeKit.
+
+
+8. LEGAL COMPLIANCE
+
+You represent and warrant that You are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country; and that You are not listed on any U.S. Government list of prohibited or restricted parties.
+
+
+9. CONTACT INFORMATION                  
+
+For general inquiries, complaints, questions or claims concerning the licensed Application, please contact:
+     
+Bubl
+328 Ohlones Street
+Fremont, CA 94539
+United States
+anishpalvai15@gmail.com
+
+
+10. TERMINATION
+
+The license is valid until terminated by Bubl or by You. Your rights under this license will terminate automatically and without notice from Bubl if You fail to adhere to any term(s) of this license. Upon License termination, You shall stop all use of the Application, and destroy all copies, full or partial, of the Application.
+
+
+11. THIRD-PARTY TERMS OF AGREEMENTS AND BENEFICIARY
+
+Bubl represents and warrants that Bubl will comply with applicable third-party terms of agreement when using licensed Application.
+
+In Accordance with Section 9 of the "Instructions for Minimum Terms of Developer's End-User License Agreement," Apple and Apple's subsidiaries shall be third-party beneficiaries of this End User License Agreement and - upon Your acceptance of the terms and conditions of this license agreement, Apple will have the right (and will be deemed to have accepted the right) to enforce this End User License Agreement against You as a third-party beneficiary thereof.
+
+
+12. INTELLECTUAL PROPERTY RIGHTS
+
+Bubl and the End-User acknowledge that, in the event of any third-party claim that the licensed Application or the End-User's possession and use of that licensed Application infringes on the third party's intellectual property rights, Bubl, and not Apple, will be solely responsible for the investigation, defense, settlement and discharge or any such intellectual property infringement claims.
+
+
+13. APPLICABLE LAW
+
+This license agreement is governed by the laws of the State of California excluding its conflicts of law rules.
+
+
+14. MISCELLANEOUS
+
+14.1  If any of the terms of this agreement should be or become invalid, the validity of the remaining provisions shall not be affected. Invalid terms will be replaced by valid ones formulated in a way that will achieve the primary purpose.
+             
+14.2  Collateral agreements, changes and amendments are only valid if laid down in writing. The preceding clause can only be waived in writing.
+   </mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xhi-lf-afc" firstAttribute="leading" secondItem="qoD-iq-7mb" secondAttribute="leading" id="5Vd-EO-7Qj"/>
+                            <constraint firstItem="Xhi-lf-afc" firstAttribute="top" secondItem="qoD-iq-7mb" secondAttribute="top" id="KUd-hZ-9yB"/>
+                            <constraint firstItem="qoD-iq-7mb" firstAttribute="bottom" secondItem="Xhi-lf-afc" secondAttribute="bottom" id="QW4-HI-NBI"/>
+                            <constraint firstItem="qoD-iq-7mb" firstAttribute="trailing" secondItem="Xhi-lf-afc" secondAttribute="trailing" id="uJg-ai-7zc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qoD-iq-7mb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qcS-Oq-Yec"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kgi-ug-Zaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1536" y="562"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yq6-XF-0c2">
+            <objects>
+                <viewController id="57Y-9J-WWe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oKe-gN-O2u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IGk-55-uWg">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">PRIVACY POLICY
+Last updated 5/9/20
+
+
+Thank you for choosing to be part of our community at Bubl. We are committed to protecting your personal information and your right to privacy. 
+When you visit our and use our services, you trust us with your personal information. We take your privacy very seriously. In this privacy policy, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy policy that you do not agree with, please discontinue use of our and our services.
+
+This privacy policy applies to all information collected through our and/or any related services, sales, marketing or events (we refer to them collectively in this privacy policy as the "Services").
+
+Please read this privacy policy carefully as it will help you make informed decisions about sharing your personal information with us.
+
+
+
+TABLE OF CONTENTS
+
+1. WHAT INFORMATION DO WE COLLECT?
+
+2. WILL YOUR INFORMATION BE SHARED WITH ANYONE?
+
+3. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
+
+4. HOW DO WE HANDLE YOUR SOCIAL LOGINS?
+
+5. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?
+
+6. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?
+
+7. HOW LONG DO WE KEEP YOUR INFORMATION?
+
+8. DO WE COLLECT INFORMATION FROM MINORS?
+
+9. WHAT ARE YOUR PRIVACY RIGHTS?
+
+10. CONTROLS FOR DO-NOT-TRACK FEATURES
+
+11. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
+
+12. DO WE MAKE UPDATES TO THIS POLICY?
+
+13. HOW CAN YOU CONTACT US ABOUT THIS POLICY?
+
+
+
+1. WHAT INFORMATION DO WE COLLECT?
+
+
+Personal information you disclose to us
+In Short:  We collect personal information that you provide to us.
+
+We collect personal information that you voluntarily provide to us when registering at the expressing an interest in obtaining information about us or our products and services, when participating in activities on the (such as posting messages in our online forums or entering competitions, contests or giveaways) or otherwise contacting us.
+
+The personal information that we collect depends on the context of your interactions with us and the , the choices you make and the products and features you use. The personal information we collect can include the following: 
+
+Social Media Login Data. We may provide you with the option to register using social media account details, like your Facebook, Twitter or other social media account. If you choose to register in this way, we will collect the Information described in the section called "HOW DO WE HANDLE YOUR SOCIAL LOGINS" below.
+
+All personal information that you provide to us must be true, complete and accurate, and you must notify us of any changes to such personal information.
+
+
+Information automatically collected
+
+In Short:   Some information — such as IP address and/or browser and device characteristics — is collected automatically when you visit our .
+
+We automatically collect certain information when you visit, use or navigate the . This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our and other technical information. This information is primarily needed to maintain the security and operation of our , and for our internal analytics and reporting purposes.
+
+Like many businesses, we also collect information through cookies and similar technologies.
+
+
+
+
+2. WILL YOUR INFORMATION BE SHARED WITH ANYONE?
+
+In Short:  We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations.
+
+We may process or share data based on the following legal basis:
+Consent: We may process your data if you have given us specific consent to use your personal information in a specific purpose.
+
+Legitimate Interests: We may process your data when it is reasonably necessary to achieve our legitimate business interests.
+
+Performance of a Contract: Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.
+
+Legal Obligations: We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).
+
+Vital Interests: We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.
+More specifically, we may need to process your data or share your personal information in the following situations:
+
+Vendors, Consultants and Other Third-Party Service Providers. We may share your data with third party vendors, service providers, contractors or agents who perform services for us or on our behalf and require access to such information to do that work. Examples include: payment processing, data analysis, email delivery, hosting services, customer service and marketing efforts. We may allow selected third parties to use tracking technology on the , which will enable them to collect data about how you interact with the over time. This information may be used to, among other things, analyze and track data, determine the popularity of certain content and better understand online activity. Unless described in this Policy, we do not share, sell, rent or trade any of your information with third parties for their promotional purposes.
+
+Business Transfers. We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+
+Third-Party Advertisers. We may use third-party advertising companies to serve ads when you visit the . These companies may use information about your visits to our Website(s) and other websites that are contained in web cookies and other tracking technologies in order to provide advertisements about goods and services of interest to you.
+
+Affiliates. We may share your information with our affiliates, in which case we will require those affiliates to honor this privacy policy. Affiliates include our parent company and any subsidiaries, joint venture partners or other companies that we control or that are under common control with us.
+
+Business Partners. We may share your information with our business partners to offer you certain products, services or promotions.
+
+Other Users. When you share personal information or otherwise interact with public areas of the , such personal information may be viewed by all users and may be publicly distributed outside the in perpetuity. If you interact with other users of our and register through a social network (such as Facebook), your contacts on the social network will see your name, profile photo, and descriptions of your activity. Similarly, other users will be able to view descriptions of your activity, communicate with you within our , and view your profile.
+
+
+3. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
+In Short:  We may use cookies and other tracking technologies to collect and store your information.
+
+We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Policy.
+
+
+
+4. HOW DO WE HANDLE YOUR SOCIAL LOGINS?
+
+In Short:  If you choose to register or log in to our services using a social media account, we may have access to certain information about you.
+
+Our offer you the ability to register and login using your third party social media account details (like your Facebook or Twitter logins). Where you choose to do this, we will receive certain profile information about you from your social media provider. The profile Information we receive may vary depending on the social media provider concerned, but will often include your name, e-mail address, friends list, profile picture as well as other information you choose to make public.
+
+We will use the information we receive only for the purposes that are described in this privacy policy or that are otherwise made clear to you on the . Please note that we do not control, and are not responsible for, other uses of your personal information by your third party social media provider. We recommend that you review their privacy policy to understand how they collect, use and share your personal information, and how you can set your privacy preferences on their sites and apps.
+
+
+
+5. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?
+
+In Short:  We may transfer, store, and process your information in countries other than your own.
+
+Our servers are located in. If you are accessing our from outside, please be aware that your information may be transferred to, stored, and processed by us in our facilities and by those third parties with whom we may share your personal information (see "WILL YOUR INFORMATION BE SHARED WITH ANYONE?" above), in and other countries.
+
+If you are a resident in the European Economic Area, then these countries may not have data protection or other laws as comprehensive as those in your country. We will however take all necessary measures to protect your personal information in accordance with this privacy policy and applicable law. 
+
+
+
+6. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?
+
+In Short:  We are not responsible for the safety of any information that you share with third-party providers who advertise, but are not affiliated with, our websites.
+
+The may contain advertisements from third parties that are not affiliated with us and which may link to other websites, online services or mobile applications. We cannot guarantee the safety and privacy of data you provide to any third parties. Any data collected by third parties is not covered by this privacy policy. We are not responsible for the content or privacy and security practices and policies of any third parties, including other websites, services or applications that may be linked to or from the . You should review the policies of such third parties and contact them directly to respond to your questions.
+
+
+
+7. HOW LONG DO WE KEEP YOUR INFORMATION?
+
+In Short:  We keep your information for as long as necessary to fulfill the purposes outlined in this privacy policy unless otherwise required by law.
+
+We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy policy, unless a longer retention period is required or permitted by law (such as tax, accounting or other legal requirements). 
+When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
+
+
+
+8. DO WE COLLECT INFORMATION FROM MINORS?
+
+In Short:  We do not knowingly collect data from or market to children under 18 years of age.
+
+We do not knowingly solicit data from or market to children under 13 years of age. By using the , you represent that you are at least 13 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the . If we learn that personal information from users less than 13 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. 
+
+9. WHAT ARE YOUR PRIVACY RIGHTS?
+
+In Short:  You may review, change, or terminate your account at any time.
+
+If you are resident in the European Economic Area and you believe we are unlawfully processing your personal information, you also have the right to complain to your local data protection supervisory authority. You can find their contact details here: http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm.
+
+
+Account Information
+If you would at any time like to review or change the information in your account or terminate your account, you can:
+
+Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, some information may be retained in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms of Use and/or comply with legal requirements.
+
+Opting out of email marketing: You can unsubscribe from our marketing email list at any time by clicking on the unsubscribe link in the emails that we send or by contacting us using the details provided below. You will then be removed from the marketing email list – however, we will still need to send you service-related emails that are necessary for the administration and use of your account. To otherwise opt-out, you may:
+
+
+
+10. CONTROLS FOR DO-NOT-TRACK FEATURES
+
+Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (“DNT”) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy policy.
+
+
+
+11. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
+
+In Short:  Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.
+
+California Civil Code Section 1798.83, also known as the “Shine The Light” law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.
+
+If you are under 18 years of age, reside in California, and have a registered account with the , you have the right to request removal of unwanted data that you publicly post on the . To request removal of such data, please contact us using the contact information provided below, and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the , but please be aware that the data may not be completely or comprehensively removed from our systems.
+
+
+
+12. DO WE MAKE UPDATES TO THIS POLICY?
+
+In Short:  Yes, we will update this policy as necessary to stay compliant with relevant laws.
+
+We may update this privacy policy from time to time. The updated version will be indicated by an updated “Revised” date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy policy, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy policy frequently to be informed of how we are protecting your information.
+
+HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
+
+Based on the laws of some countries, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please submit a request form by clicking here. We will respond to your request within 30 days.</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yRZ-or-mMS" firstAttribute="trailing" secondItem="IGk-55-uWg" secondAttribute="trailing" id="Bgp-JT-lhP"/>
+                            <constraint firstItem="IGk-55-uWg" firstAttribute="top" secondItem="yRZ-or-mMS" secondAttribute="top" id="YPB-FV-JxY"/>
+                            <constraint firstItem="yRZ-or-mMS" firstAttribute="bottom" secondItem="IGk-55-uWg" secondAttribute="bottom" id="e8I-Vc-diN"/>
+                            <constraint firstItem="IGk-55-uWg" firstAttribute="leading" secondItem="yRZ-or-mMS" secondAttribute="leading" id="oLM-fA-Ady"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yRZ-or-mMS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Stw-Np-TsY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m01-K7-MHY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="562"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="udD-fM-Oks">
             <objects>
                 <viewController id="fZw-kc-qMi" customClass="SignUpViewController" customModule="Bubl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i4C-py-QHA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XFE-W7-Ok4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shapes" translatesAutoresizingMaskIntoConstraints="NO" id="MuA-QQ-xVG">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
@@ -242,35 +610,9 @@
                                         <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
                                     </stackView>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="ZS2-4X-naa">
-                                        <rect key="frame" x="0.0" y="553" width="414" height="226.5"/>
+                                        <rect key="frame" x="0.0" y="553" width="414" height="221"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JTZ-gN-0wf">
-                                        <rect key="frame" x="0.0" y="787.5" width="414" height="20.5"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="oYA-pE-AiL">
-                                                <rect key="frame" x="83.5" y="0.0" width="247" height="20.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rr-Xz-1Sk">
-                                                        <rect key="frame" x="0.0" y="0.0" width="196" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyL-7E-eVj">
-                                                        <rect key="frame" x="200" y="0.0" width="47" height="20.5"/>
-                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                                        <state key="normal" title="Login">
-                                                            <color key="titleColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <segue destination="vdJ-ih-Wv0" kind="show" id="p5U-tC-roo"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -293,18 +635,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alp-q6-FAU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-639" y="-317"/>
+            <point key="canvasLocation" x="271.01449275362319" y="-317.41071428571428"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="BjT-rk-6ia">
             <objects>
                 <viewController id="vdJ-ih-Wv0" customClass="LoginViewController" customModule="Bubl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CRr-8L-nT6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KpF-PE-rqz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shapes" translatesAutoresizingMaskIntoConstraints="NO" id="EIO-O1-A5d">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
@@ -368,35 +710,9 @@
                                         <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
                                     </stackView>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="4zc-ZU-Wf9">
-                                        <rect key="frame" x="0.0" y="436" width="414" height="335"/>
+                                        <rect key="frame" x="0.0" y="436" width="414" height="338"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="U2N-K7-8qB">
-                                        <rect key="frame" x="0.0" y="779" width="414" height="29"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="l7t-W7-xVy">
-                                                <rect key="frame" x="82" y="0.0" width="250" height="29"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtr-Jd-glH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="29"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwS-ar-Ipp">
-                                                        <rect key="frame" x="183" y="0.0" width="67" height="29"/>
-                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                                        <state key="normal" title="Sign Up">
-                                                            <color key="titleColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dismissTapped:" destination="vdJ-ih-Wv0" eventType="touchUpInside" id="pGe-tZ-80Q"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -418,7 +734,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w9S-DN-Uj2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="197" y="-317"/>
+            <point key="canvasLocation" x="1105.7971014492755" y="-317.41071428571428"/>
         </scene>
         <!--Form View Controller-->
         <scene sceneID="mIE-U3-Kco">
@@ -615,7 +931,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ER-Gf-LeH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2732" y="-317"/>
+            <point key="canvasLocation" x="3642.0289855072465" y="-317.41071428571428"/>
         </scene>
         <!--Matches View Controller-->
         <scene sceneID="gOR-n9-VFG">
@@ -631,7 +947,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hq-Pd-Uhl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2732" y="406"/>
+            <point key="canvasLocation" x="3642.0289855072465" y="405.80357142857139"/>
         </scene>
         <!--Pop Over View Controller-->
         <scene sceneID="yc9-Q6-7QJ">
@@ -718,12 +1034,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L74-k2-5Nd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3757.971014492754" y="-317.41071428571428"/>
+            <point key="canvasLocation" x="4668.115942028986" y="-317.41071428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pCs-zh-8qh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ytZ-Uj-rw4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gPb-qQ-pBA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SA3-vb-iNb" kind="relationship" relationship="rootViewController" id="YWt-uM-ma0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOo-uV-0fU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1465.217391304348" y="-301.33928571428572"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="pxj-6E-DCl"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="shapes" width="512" height="512"/>
     </resources>
