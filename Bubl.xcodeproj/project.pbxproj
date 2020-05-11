@@ -14,6 +14,7 @@
 		86F8410E2457F842001458F4 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F841052457F842001458F4 /* UIImage.swift */; };
 		86F8410F2457F842001458F4 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F841062457F842001458F4 /* UIViewController.swift */; };
 		B1519E1E5D6E8F8E630623F5 /* Pods_Bubl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21020AF4828F602580AF77F3 /* Pods_Bubl.framework */; };
+		F813333C24690CF600464B3D /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813333B24690CF600464B3D /* NotificationNameExtension.swift */; };
 		F813692B245B602F00F3AB54 /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813692A245B602F00F3AB54 /* PopOverViewController.swift */; };
 		F813692D245B628B00F3AB54 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813692C245B628B00F3AB54 /* Shared.swift */; };
 		F84E8DD0246695D30091494B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E8DCF246695D30091494B /* OnboardingViewController.swift */; };
@@ -38,6 +39,7 @@
 		86F841052457F842001458F4 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		86F841062457F842001458F4 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		ADCB39718635CEBBFEC16461 /* Pods-Bubl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubl.release.xcconfig"; path = "Target Support Files/Pods-Bubl/Pods-Bubl.release.xcconfig"; sourceTree = "<group>"; };
+		F813333B24690CF600464B3D /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 		F813692A245B602F00F3AB54 /* PopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
 		F813692C245B628B00F3AB54 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		F84E8DCF246695D30091494B /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -127,8 +129,8 @@
 				F8A23EB02454D5270073DA2E /* AppDelegate.swift */,
 				F8A23EB22454D5270073DA2E /* SceneDelegate.swift */,
 				86F840EB2457EC70001458F4 /* HomeView.swift */,
-				F813692A245B602F00F3AB54 /* PopOverViewController.swift */,
 				F813692C245B628B00F3AB54 /* Shared.swift */,
+				F813692A245B602F00F3AB54 /* PopOverViewController.swift */,
 				F8577D4F245B4C67005BBBF9 /* FormViewController.swift */,
 				F8D8F4AE245D1DF400A9474C /* MatchesViewController.swift */,
 				F84E8DCF246695D30091494B /* OnboardingViewController.swift */,
@@ -139,6 +141,7 @@
 				F8A23EBB2454D5280073DA2E /* LaunchScreen.storyboard */,
 				F8A23EBE2454D5280073DA2E /* Info.plist */,
 				86486BD2246335F800390018 /* GoogleService-Info.plist */,
+				F813333B24690CF600464B3D /* NotificationNameExtension.swift */,
 			);
 			path = Bubl;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				F8577D50245B4C67005BBBF9 /* FormViewController.swift in Sources */,
 				F84E8DD0246695D30091494B /* OnboardingViewController.swift in Sources */,
 				F813692B245B602F00F3AB54 /* PopOverViewController.swift in Sources */,
+				F813333C24690CF600464B3D /* NotificationNameExtension.swift in Sources */,
 				86F840EC2457EC70001458F4 /* HomeView.swift in Sources */,
 				86F8410D2457F842001458F4 /* UIColor.swift in Sources */,
 				F8A23EB32454D5270073DA2E /* SceneDelegate.swift in Sources */,

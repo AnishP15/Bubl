@@ -12,21 +12,23 @@ import FirebaseFirestore
 
 class PopOverViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-       @IBOutlet weak var Popupview: UIView!
-       
+
        @IBOutlet weak var tableView: UITableView!
-           
+       @IBOutlet weak var cancelButton: UIButton!
+    
        var names: [String] = ["ISTJ","ISFJ","INFJ","INTJ","ISTP","INFP","INTP","ESTP","ESFP","ENFP", "ENTP","ESTJ","ESFJ","ENFJ","ENTJ"]
      
+    var personalityType: String?
        override func viewDidLoad() {
            super.viewDidLoad()
            
+           cancelButton.layer.borderColor = #colorLiteral(red: 0.02608692087, green: 0.7744804025, blue: 0.6751230955, alpha: 1)
            tableView.dataSource = self
            tableView.delegate = self
         
           // Apply radius to Popupview
-           Popupview.layer.cornerRadius = 10
-           Popupview.layer.masksToBounds = true
+          // Popupview.layer.cornerRadius = 10
+          // Popupview.layer.masksToBounds = true
     
        }
        
@@ -44,14 +46,18 @@ class PopOverViewController: UIViewController, UITableViewDelegate, UITableViewD
                let db = Firestore.firestore()
             db.collection("users").document(user.uid).collection("form").document("personalityType").setData(["personalityType" : names[indexPath.row]])
            }
-         
+        
+            personalityType = names[indexPath.row]
             Shared.shared.personality = names[indexPath.row]
+
+            NotificationCenter.default.post(name: Notification.Name.personalityTypeName, object: self)
+            dismiss(animated: true, completion: nil)
         
            
     
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewController = storyBoard.instantiateViewController(withIdentifier: "FormViewController") 
-            self.present(newViewController, animated: true, completion: nil)
+            //let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+           // let newViewController = storyBoard.instantiateViewController(withIdentifier: "FormViewController")
+            //self.present(newViewController, animated: true, completion: nil)
         
        }
        
@@ -72,6 +78,8 @@ class PopOverViewController: UIViewController, UITableViewDelegate, UITableViewD
        }
 
 
+    
+    
     /*
     // MARK: - Navigation
 

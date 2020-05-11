@@ -21,8 +21,16 @@ class FormViewController: UIViewController {
         super.viewDidLoad()
         
         btnSelect.layer.borderColor = #colorLiteral(red: 0.02608692087, green: 0.7744804025, blue: 0.6751230955, alpha: 1)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handlePopupClosing), name: .personalityTypeName, object: nil)
         let cn : String = Shared.shared.personality ?? "Select your personality type"
-        btnSelect.setTitle(cn,for: .normal)
+        
+    }
+    
+    @objc func handlePopupClosing(notification: Notification) {
+        let personalityVC = notification.object as! PopOverViewController
+        btnSelect.setTitle(personalityVC.personalityType!, for: .normal)
+
         
     }
     
@@ -111,5 +119,16 @@ class FormViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
+    
+    @IBAction func selectPersonalityType(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let popOver = storyBoard.instantiateViewController(withIdentifier: "PopOverViewController")
+        self.definesPresentationContext = true
+        popOver.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
+        popOver.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+        self.present(popOver, animated: true, completion: nil)
+        
+        
+    }
 }
 
