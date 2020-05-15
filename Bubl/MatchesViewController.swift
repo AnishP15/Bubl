@@ -9,6 +9,7 @@
 import UIKit
 import SVProgressHUD
 import Firebase
+import FirebaseFirestore
 
 enum Colors {
     
@@ -22,7 +23,7 @@ enum Colors {
 enum Images {
     
     static let box = UIImage(named: "Box")!
-    static let triangle = UIImage(named: "Triangle")!
+    //static let triangle = UIImage(named: "Triangle")!
     static let circle = UIImage(named: "Circle")!
     static let swirl = UIImage(named: "Spiral")!
     
@@ -44,7 +45,7 @@ class MatchesViewController: UIViewController {
     
     var images:[UIImage] = [
         Images.box,
-        Images.triangle,
+        //Images.triangle,
         Images.circle,
         Images.swirl
     ]
@@ -58,6 +59,48 @@ class MatchesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let db = Firestore.firestore()
+        var currentUserSelectedActivity: String!
+        var currentUserSelectedGender: String!
+        var currentUserLookingForGender: String!
+        var currentUserPersonalityType: String!
+        var currentUserIg: String?
+        
+        let user = Auth.auth().currentUser
+            if let user = user {
+                db.collection("Users").document(user.uid).getDocument { (snapshot, error) in
+                    let userData = snapshot?.data()
+                    currentUserIg = userData?["selectedActivity"] as? String
+                    currentUserSelectedGender = userData?["selectedGender"] as? String
+                    currentUserLookingForGender  = userData?["lookingForGender"] as? String
+                    currentUserPersonalityType = userData?["personalityType"] as? String
+                    currentUserIg = userData?["igHandle"] as? String
+                    
+                }
+            }
+        
+        
+        let allUsers = db.collection("Users")
+        allUsers.addSnapshotListener { (querySnapshot, error) in
+            guard let snapshot = querySnapshot else { return }
+            for document in snapshot.documents {
+                let data = document.data()
+                if data["selectedGender"] as? String == currentUserLookingForGender {
+                    if data["lookingForGender"] as? String == currentUserSelectedGender {
+                        if data["personalityType"] as? String == currentUserPersonalityType {
+                            if data["selectedActivity"] as? String == currentUserSelectedActivity {
+                                let matchIg = data["igHandle"] as! String
+                                print(" \(matchIg) matches with \(currentUserIg)")
+                            }
+                        }
+                    }
+                }
+                
+
+            }
+        }
+        
 
         // Do any additional setup after loading the view.
         //SVProgressHUD.show()
@@ -129,7 +172,7 @@ class MatchesViewController: UIViewController {
     }
     
     private func getNextImage(i:Int) -> CGImage {
-        return images[i % 4].cgImage!
+        return images[i % 3].cgImage!
     }
     
 }

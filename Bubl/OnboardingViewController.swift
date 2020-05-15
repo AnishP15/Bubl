@@ -13,7 +13,6 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var createAcct: UIButton!
     @IBOutlet weak var textView: UITextView!
     
-    @IBOutlet var cb1: CheckBox!
     
     var tap: UITapGestureRecognizer?
     override func viewDidLoad() {
@@ -33,11 +32,11 @@ class OnboardingViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(true, animated: animated)
+        //navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(true, animated: animated)
+        //navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     @objc func tapped() {

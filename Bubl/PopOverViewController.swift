@@ -44,7 +44,7 @@ class PopOverViewController: UIViewController, UITableViewDelegate, UITableViewD
            let user = Auth.auth().currentUser
            if let user = user {
                let db = Firestore.firestore()
-            db.collection("users").document(user.uid).collection("form").document("personalityType").setData(["personalityType" : names[indexPath.row]])
+            db.collection("Users").document(user.uid).setData(["personalityType" : names[indexPath.row]], merge: true)
            }
         
             personalityType = names[indexPath.row]

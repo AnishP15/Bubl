@@ -85,12 +85,11 @@ class FormViewController: UIViewController {
             let user = Auth.auth().currentUser
             if let user = user {
                 let db = Firestore.firestore()
-                db.collection("Users").document(user.uid).collection("form").document("selectedGender").setData(["selectedGender": selectedGender])
-                print(selectedGender)
-                db.collection("Users").document(user.uid).collection("form").document("lookingForGender").setData(["lookingForGender" : lookingForGender])
-                print(lookingForGender)
-                db.collection("Users").document(user.uid).collection("form").document("selectedActivity").setData(["selectedActivity" : selectedActivity])
-                print(selectedActivity)
+                db.collection("Users").document(user.uid).setData(["selectedGender" : selectedGender], merge: true)
+                db.collection("Users").document(user.uid).setData(["lookingForGender" : lookingForGender], merge: true)
+                db.collection("Users").document(user.uid).setData(["selectedActivity" : selectedActivity], merge: true)
+
+                
             }
             
             let alert = UIAlertController(title: "Are yous sure?", message: "Do you want to proceed to matches?", preferredStyle: .alert)

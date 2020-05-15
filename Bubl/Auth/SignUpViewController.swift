@@ -42,8 +42,7 @@ class SignUpViewController: UIViewController {
                             let user = Auth.auth().currentUser
                             if let user = user {
                                 let db = Firestore.firestore()
-                                db.collection("users").document(user.uid).collection("auth").document("igHandle").setData(["igHandle" : instaHandle, "email": self.emailTextField.text!])
-                                                                
+                                db.collection("Users").document(user.uid).setData(["igHandle" : instaHandle], merge: true)
                                 let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FormViewController")
                                 
                                 self.present(viewController, animated: true, completion: nil)
@@ -52,7 +51,7 @@ class SignUpViewController: UIViewController {
                         }
                         else {
                             self.warningLabel.textColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
-                            self.warningLabel.text = "Use a valid email with a password of atleast 6 characters."
+                            self.warningLabel.text = "Unable to Sign Up."
                         }
                     }
                 }
@@ -60,7 +59,7 @@ class SignUpViewController: UIViewController {
         }
         else {
             warningLabel.textColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
-            warningLabel.text = "Use a valid email with a password of atleast 6 characters."
+            warningLabel.text = "Unable to Sign Up."
         }
         
         
