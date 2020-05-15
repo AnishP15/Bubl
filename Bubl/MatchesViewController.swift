@@ -60,50 +60,85 @@ class MatchesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //SVProgressHUD.show()
+        
         let db = Firestore.firestore()
-        var currentUserSelectedActivity: String!
+        /*var currentUserSelectedActivity: String!
         var currentUserSelectedGender: String!
         var currentUserLookingForGender: String!
         var currentUserPersonalityType: String!
-        var currentUserIg: String?
+        var currentUserIg: String?*/
+        
+        var matchArray = [String]()
         
         let user = Auth.auth().currentUser
             if let user = user {
                 db.collection("Users").document(user.uid).getDocument { (snapshot, error) in
                     let userData = snapshot?.data()
-                    currentUserIg = userData?["selectedActivity"] as? String
-                    currentUserSelectedGender = userData?["selectedGender"] as? String
-                    currentUserLookingForGender  = userData?["lookingForGender"] as? String
-                    currentUserPersonalityType = userData?["personalityType"] as? String
-                    currentUserIg = userData?["igHandle"] as? String
+                    //print(userData!["selectedActivity"]!) as? String
                     
-                }
-            }
-        
-        
-        let allUsers = db.collection("Users")
-        allUsers.addSnapshotListener { (querySnapshot, error) in
-            guard let snapshot = querySnapshot else { return }
-            for document in snapshot.documents {
-                let data = document.data()
-                if data["selectedGender"] as? String == currentUserLookingForGender {
-                    if data["lookingForGender"] as? String == currentUserSelectedGender {
-                        if data["personalityType"] as? String == currentUserPersonalityType {
-                            if data["selectedActivity"] as? String == currentUserSelectedActivity {
-                                let matchIg = data["igHandle"] as! String
-                                print(" \(matchIg) matches with \(currentUserIg)")
+                    let currentUserSelectedActivity = (userData!["selectedActivity"]! as? String)!
+                    let currentUserSelectedGender = (userData!["selectedGender"]! as? String)!
+                    let currentUserLookingForGender = (userData!["lookingForGender"]! as? String)!
+                    let currentUserPersonalityType = (userData!["personalityType"]! as? String)!
+                    let currentUserIg = (userData!["igHandle"]! as? String)!
+                    
+                    //print(currentUserSelectedActivity)
+                    
+                    let allUsers = db.collection("Users")
+                    allUsers.addSnapshotListener { (querySnapshot, error) in
+                        guard let snapshot = querySnapshot else { return }
+                        for document in snapshot.documents {
+                            
+                            var matchCounts = 0
+                            
+                            let data = document.data()
+                            
+                            if data["selectedGender"]! as? String == currentUserLookingForGender {
+                                matchCounts = matchCounts + 1
+                                
                             }
+                            
+                            if data["lookingForGender"]! as? String == currentUserSelectedGender {
+                                matchCounts = matchCounts + 1
+                                
+                            }
+                            
+                            if data["personalityType"]! as? String == currentUserPersonalityType {
+                                matchCounts = matchCounts + 1
+                            
+                            }
+                            
+                            if data["selectedActivity"]! as? String == currentUserSelectedActivity {
+                                matchCounts = matchCounts + 1
+                            
+                            }
+                                                        
+                            if matchCounts >= 3 {
+                                let matchIg = data["igHandle"] as! String
+                                
+                                print(matchIg)
+                                matchArray.append(matchIg)
+                                
+                            }
+                            
                         }
                     }
+                    
+                    
+                    /*let match = matchArray.randomElement()!
+                    
+                    let mainDisplayText = "You (\(currentUserIg)) are matched with \(match)"
+                    
+                    print(mainDisplayText)*/
                 }
-                
-
-            }
         }
+        
+        
         
 
         // Do any additional setup after loading the view.
-        //SVProgressHUD.show()
+        //SVProgressHUD.dismiss()
     }
     
     override func viewWillAppear(_ animated: Bool) {
