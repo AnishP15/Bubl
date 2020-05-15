@@ -32,7 +32,8 @@ enum Images {
 
 class MatchesViewController: UIViewController {
 
-    @IBOutlet weak var warningLabel: UILabel!
+    @IBOutlet weak var matchesLabel: UILabel!
+    @IBOutlet weak var retakeTestButton: UIButton!
     
     var emitter = CAEmitterLayer()
     
@@ -57,8 +58,22 @@ class MatchesViewController: UIViewController {
         200
     ]
     
+    
+    @IBAction func retakeTestBtnTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func refreshTapped(_ sender: Any) {
+        
+        // code to refresh the matches 
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        retakeTestButton.layer.borderColor = #colorLiteral(red: 0.02608692087, green: 0.7744804025, blue: 0.6751230955, alpha: 1)
         
         //SVProgressHUD.show()
         
@@ -117,9 +132,13 @@ class MatchesViewController: UIViewController {
                             if matchCounts >= 3 {
                                 let matchIg = data["igHandle"] as! String
                                 
-                                print(matchIg)
+                                self.matchesLabel.text = "You should connect with \(matchIg) on Instagram!"
+
                                 matchArray.append(matchIg)
                                 
+                            }
+                            else {
+                                self.matchesLabel.text = "We are still looking for matches!"
                             }
                             
                         }
@@ -132,6 +151,8 @@ class MatchesViewController: UIViewController {
                     
                     print(mainDisplayText)*/
                 }
+                
+                
         }
         
         
