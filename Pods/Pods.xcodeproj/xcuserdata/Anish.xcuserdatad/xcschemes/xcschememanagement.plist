@@ -123,6 +123,11 @@
 			<key>orderHint</key>
 			<integer>18</integer>
 		</dict>
+		<key>JGProgressHUD.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>28</integer>
+		</dict>
 		<key>Pods-Bubl.xcscheme</key>
 		<dict>
 			<key>isShown</key>

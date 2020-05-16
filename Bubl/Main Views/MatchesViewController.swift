@@ -25,6 +25,7 @@ class MatchesViewController: UIViewController {
 
     @IBOutlet weak var matchesLabel: UILabel!
     @IBOutlet weak var retakeTestButton: UIButton!
+    var tap: UITapGestureRecognizer?
     
     var emitter = CAEmitterLayer()
     
@@ -56,8 +57,10 @@ class MatchesViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    var match = ""
     
     @IBAction func refreshTapped(_ sender: Any) {
+        
         
         self.emitter.removeFromSuperlayer()
         
@@ -75,8 +78,10 @@ class MatchesViewController: UIViewController {
         })
         
         // code to refresh the matches
-        let match = matchArray.randomElement()!
+
+        match = matchArray.randomElement()!
         
+      
         let mainDisplayText = "You (@\(currentUser)) should connect with @\(match) on Instagram!"
         
         let rangeSignUp = NSString(string: mainDisplayText).range(of: "@\(match)", options: String.CompareOptions.caseInsensitive)
@@ -85,20 +90,44 @@ class MatchesViewController: UIViewController {
         
         let attrStr = NSMutableAttributedString.init(string:mainDisplayText)
         attrStr.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,
-                               NSAttributedString.Key.font : UIFont.init(name: "Helvetica", size: 17)! as Any],range: rangeFull)
+                               NSAttributedString.Key.font : UIFont.init(name: "Higarino Sans", size: 17)! as Any],range: rangeFull)
         attrStr.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,
-                               NSAttributedString.Key.font : UIFont.init(name: "Helvetica", size: 20)!,
+                               NSAttributedString.Key.font : UIFont.init(name: "Higarino Sans", size: 20)!,
                               NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue as Any],range: rangeSignUp) // for swift 4 -> Change thick to styleThick
         self.matchesLabel.attributedText = attrStr
         
-        
     }
     
+    @objc func tapped() {
+        guard let text = matchesLabel.attributedText?.string else {
+                return
+        }
+        let matchText = (text as NSString).range(of: "\(match)")
+        
+
+        if tap!.didTapAttributedTextInLabel(label: matchesLabel, inRange: matchText) {
+            let Username =  match // Your Instagram Username here
+            let appURL = URL(string: "instagram://user?username=\(Username)")!
+            let application = UIApplication.shared
+
+            if application.canOpenURL(appURL) {
+                application.open(appURL)
+            } else {
+                // if Instagram app is not installed, open URL inside Safari
+                let webURL = URL(string: "https://instagram.com/\(Username)")!
+                application.open(webURL)
+            }        }
+    }
+
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         retakeTestButton.layer.borderColor = #colorLiteral(red: 0.02608692087, green: 0.7744804025, blue: 0.6751230955, alpha: 1)
+        tap = UITapGestureRecognizer(target: self, action: #selector(tapped))
+        tap!.numberOfTapsRequired = 1
+        view.addGestureRecognizer(tap!)
         
         //SVProgressHUD.show()
         
@@ -157,7 +186,10 @@ class MatchesViewController: UIViewController {
                             if matchCounts >= 3 {
                                 let matchIg = data["igHandle"] as! String
                                 
-                                self.matchArray.append(matchIg)
+                                if matchIg != currentUserIg {
+                                
+                                    self.matchArray.append(matchIg)
+                                }
                                 
                             }
                                 
@@ -168,22 +200,25 @@ class MatchesViewController: UIViewController {
                             
                         }
                         
-                        let match = self.matchArray.randomElement()!
-                        
-                        let mainDisplayText = "You (@\(self.currentUser)) should connect with @\(match) on Instagram!"
-                        
-                        let rangeSignUp = NSString(string: mainDisplayText).range(of: "@\(match)", options: String.CompareOptions.caseInsensitive)
-                        
+                        self.match = self.matchArray.randomElement()!
+                            
+                        let mainDisplayText = "You (@\(self.currentUser)) should connect with @\(self.match) on Instagram!"
+                                    
+                        let rangeSignUp = NSString(string: mainDisplayText).range(of: "@\(self.match)", options: String.CompareOptions.caseInsensitive)
+                                    
                         let rangeFull = NSString(string: mainDisplayText).range(of: mainDisplayText, options: String.CompareOptions.caseInsensitive)
-                        
+                                    
                         let attrStr = NSMutableAttributedString.init(string:mainDisplayText)
+                                    attrStr.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,
+                                                           NSAttributedString.Key.font : UIFont.init(name: "Helvetica", size: 17)! as Any],range: rangeFull)
                         attrStr.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,
-                                               NSAttributedString.Key.font : UIFont.init(name: "Helvetica", size: 17)! as Any],range: rangeFull)
-                        attrStr.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,
-                                               NSAttributedString.Key.font : UIFont.init(name: "Helvetica", size: 20)!,
-                                              NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue as Any],range: rangeSignUp) // for swift 4 -> Change thick to styleThick
+                                                           NSAttributedString.Key.font : UIFont.init(name: "Helvetica", size: 20)!,
+                                                          NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue as Any],range: rangeSignUp) // for swift 4 -> Change thick to styleThick
                         self.matchesLabel.attributedText = attrStr
+                            
 
+                        
+                        
                     }
                 }
                 
@@ -214,6 +249,8 @@ class MatchesViewController: UIViewController {
         })
         
     }
+    
+
     
     private func generateEmitterCells() -> [CAEmitterCell] {
         var cells:[CAEmitterCell] = [CAEmitterCell]()

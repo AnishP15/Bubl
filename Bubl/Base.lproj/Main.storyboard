@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ytZ-Uj-rw4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ytZ-Uj-rw4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -969,14 +969,14 @@ Based on the laws of some countries, you may have the right to request access to
         <scene sceneID="gOR-n9-VFG">
             <objects>
                 <viewController id="oAM-8P-IGs" customClass="MatchesViewController" customModule="Bubl" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="46y-uv-I9J">
+                    <view key="view" contentMode="scaleToFill" id="46y-uv-I9J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="145" translatesAutoresizingMaskIntoConstraints="NO" id="bZD-6j-Kgk">
-                                <rect key="frame" x="0.0" y="108" width="414" height="534"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="bZD-6j-Kgk">
+                                <rect key="frame" x="0.0" y="108" width="414" height="544"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13K-PD-CJb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are still looking for matches!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13K-PD-CJb">
                                         <rect key="frame" x="8" y="8" width="398" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="P5w-xQ-5w2"/>
@@ -987,7 +987,7 @@ Based on the laws of some countries, you may have the right to request access to
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1he-zx-xmv">
-                                        <rect key="frame" x="8" y="203" width="398" height="50"/>
+                                        <rect key="frame" x="8" y="208" width="398" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="PB7-uK-j7Z"/>
                                         </constraints>
@@ -1011,8 +1011,8 @@ Based on the laws of some countries, you may have the right to request access to
                                             <action selector="retakeTestBtnTapped:" destination="oAM-8P-IGs" eventType="touchUpInside" id="m7h-Zq-EQX"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBs-Ib-YPb">
-                                        <rect key="frame" x="8" y="398" width="398" height="128"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBs-Ib-YPb">
+                                        <rect key="frame" x="8" y="408" width="398" height="128"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="GGD-Tg-YDE"/>
@@ -1027,19 +1027,20 @@ Based on the laws of some countries, you may have the right to request access to
                             <constraint firstItem="bZD-6j-Kgk" firstAttribute="top" secondItem="JgU-tI-IjA" secondAttribute="top" id="0PA-eJ-Lb7"/>
                             <constraint firstItem="bZD-6j-Kgk" firstAttribute="leading" secondItem="JgU-tI-IjA" secondAttribute="leading" id="5xM-vZ-1Xp"/>
                             <constraint firstItem="JgU-tI-IjA" firstAttribute="trailing" secondItem="bZD-6j-Kgk" secondAttribute="trailing" id="pyy-OO-hvf"/>
-                            <constraint firstAttribute="bottom" secondItem="bZD-6j-Kgk" secondAttribute="bottom" id="q56-B3-Dfc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JgU-tI-IjA"/>
                     </view>
                     <navigationItem key="navigationItem" title="Matches" id="l7O-1T-KnH">
-                        <rightBarButtonItems>
-                            <barButtonItem title="Item" image="profile" id="Gz8-3h-Att">
-                                <connections>
-                                    <segue destination="ByE-gz-v07" kind="show" id="Gyd-LZ-sYH"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="refresh" id="Wxg-o6-pe4"/>
-                        </rightBarButtonItems>
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="Wxg-o6-pe4">
+                            <connections>
+                                <action selector="refreshTapped:" destination="oAM-8P-IGs" id="ArM-pp-PK5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="profile" id="Gz8-3h-Att">
+                            <connections>
+                                <segue destination="ByE-gz-v07" kind="show" id="Gyd-LZ-sYH"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="matchesLabel" destination="13K-PD-CJb" id="vdj-HG-bm3"/>
@@ -1173,21 +1174,30 @@ Based on the laws of some countries, you may have the right to request access to
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQ9-eq-dDs">
-                                                    <rect key="frame" x="20" y="17" width="89" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="john@appleseed.tld" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pY8-pU-8j6">
-                                                    <rect key="frame" x="105" y="17" width="289" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceY-jY-nQf">
+                                                    <rect key="frame" x="20" y="11" width="374" height="33"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQ9-eq-dDs">
+                                                            <rect key="frame" x="0.0" y="0.0" width="187" height="33"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="john@appleseed.tld" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pY8-pU-8j6">
+                                                            <rect key="frame" x="187" y="0.0" width="187" height="33"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ceY-jY-nQf" firstAttribute="leading" secondItem="wLr-tN-S69" secondAttribute="leadingMargin" id="Gko-cu-ipG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ceY-jY-nQf" secondAttribute="bottom" id="OfZ-7r-uzD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ceY-jY-nQf" secondAttribute="trailing" id="XBi-wP-e4e"/>
+                                                <constraint firstItem="ceY-jY-nQf" firstAttribute="top" secondItem="wLr-tN-S69" secondAttribute="topMargin" id="gIs-Lc-XBu"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="55" id="haw-I1-DJw">
@@ -1197,21 +1207,30 @@ Based on the laws of some countries, you may have the right to request access to
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IG:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ze-ZV-hr1">
-                                                    <rect key="frame" x="20" y="17" width="89" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@johnappleseed" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tm8-mb-5xu">
-                                                    <rect key="frame" x="105" y="17" width="289" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1W-cl-avX">
+                                                    <rect key="frame" x="20" y="11" width="374" height="33"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IG:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ze-ZV-hr1">
+                                                            <rect key="frame" x="0.0" y="0.0" width="187" height="33"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@johnappleseed" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tm8-mb-5xu">
+                                                            <rect key="frame" x="187" y="0.0" width="187" height="33"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="A1W-cl-avX" firstAttribute="top" secondItem="u58-rk-cD0" secondAttribute="topMargin" id="IcN-pL-Ymb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="A1W-cl-avX" secondAttribute="trailing" id="TCI-ck-524"/>
+                                                <constraint firstItem="A1W-cl-avX" firstAttribute="leading" secondItem="u58-rk-cD0" secondAttribute="leadingMargin" id="cHO-AD-mgC"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="A1W-cl-avX" secondAttribute="bottom" id="rLe-ea-kKR"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -1227,7 +1246,7 @@ Based on the laws of some countries, you may have the right to request access to
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGP-tV-Lj6">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                                     <state key="normal" title="Logout">
                                                         <color key="titleColor" red="0.96620899439999997" green="0.48775036999999999" blue="0.43855692039999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
