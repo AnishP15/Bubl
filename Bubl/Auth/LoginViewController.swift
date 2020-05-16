@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import JGProgressHUD
 
 class LoginViewController: UIViewController {
 
@@ -29,10 +30,15 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func continueTapped(_ sender: Any) {
+        let hud = JGProgressHUD(style: .dark)
+        hud.textLabel.text = "Loading..."
+        hud.show(in: self.view)
+        
         if let email = emailTextField.text {
             if let password = passwordTextField.text {
                 Auth.auth().signIn(withEmail: email, password: password) { (auth, error) in
                     if error == nil{
+                        hud.dismiss(afterDelay: 2.0)
                         
                         let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FormViewController")
 
@@ -40,6 +46,8 @@ class LoginViewController: UIViewController {
 
                     }
                     else {
+                        hud.dismiss(afterDelay: 1.0)
+                        
                         self.warningLabel.textColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
                         self.warningLabel.text = "Unable to login."
                     }
@@ -48,6 +56,8 @@ class LoginViewController: UIViewController {
         }
         
         else {
+            hud.dismiss(afterDelay: 1.0)
+
             warningLabel.textColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
             warningLabel.text = "Unable to login."
         }

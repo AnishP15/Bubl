@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import FirebaseAuth
 import Firebase
-import FirebaseFirestore
+import JGProgressHUD
 
 class SignUpViewController: UIViewController {
     
@@ -34,6 +33,10 @@ class SignUpViewController: UIViewController {
     
     
     @IBAction func continueTapped(_ sender: Any) {
+        let hud = JGProgressHUD(style: .dark)
+        hud.textLabel.text = "Loading..."
+        hud.show(in: self.view)
+        
         if let instaHandle = instagramHandleTextField.text {
             if let email = emailTextField.text {
                 if let password = passwordTextField.text {
@@ -43,6 +46,10 @@ class SignUpViewController: UIViewController {
                             if let user = user {
                                 let db = Firestore.firestore()
                                 db.collection("Users").document(user.uid).setData(["igHandle" : instaHandle], merge: true)
+                                
+                                hud.dismiss(afterDelay: 2.0)
+
+                                
                                 let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FormViewController")
                                 
                                 self.present(viewController, animated: true, completion: nil)
@@ -50,6 +57,8 @@ class SignUpViewController: UIViewController {
                             }
                         }
                         else {
+                            hud.dismiss(afterDelay: 1.0)
+                            
                             self.warningLabel.textColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
                             self.warningLabel.text = "Unable to Sign Up."
                         }
@@ -58,6 +67,8 @@ class SignUpViewController: UIViewController {
             }
         }
         else {
+            hud.dismiss(afterDelay: 2.0)
+
             warningLabel.textColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
             warningLabel.text = "Unable to Sign Up."
         }

@@ -277,6 +277,7 @@ PODS:
     - nanopb (~> 0.3)
   - gRPC-Core/Interface (1.21.0)
   - GTMSessionFetcher/Core (1.3.1)
+  - JGProgressHUD (2.1)
   - leveldb-library (1.22)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
@@ -285,7 +286,6 @@ PODS:
   - nanopb/encode (0.3.9011)
   - PromisesObjC (1.2.8)
   - RSSelectionMenu (6.1.0)
-  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - DropDown
@@ -293,8 +293,8 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Database
   - Firebase/Firestore
+  - JGProgressHUD
   - RSSelectionMenu
-  - SVProgressHUD
 
 SPEC REPOS:
   trunk:
@@ -318,11 +318,11 @@ SPEC REPOS:
     - "gRPC-C++"
     - gRPC-Core
     - GTMSessionFetcher
+    - JGProgressHUD
     - leveldb-library
     - nanopb
     - PromisesObjC
     - RSSelectionMenu
-    - SVProgressHUD
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
@@ -345,12 +345,12 @@ SPEC CHECKSUMS:
   "gRPC-C++": 9dfe7b44821e7b3e44aacad2af29d2c21f7cde83
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
   GTMSessionFetcher: cea130bbfe5a7edc8d06d3f0d17288c32ffe9925
+  JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   RSSelectionMenu: dac4fa365e4bbd95c0eccd0b6ff51a623a22a1c6
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 68882ce797f52c2713f64d72c4f3aacaabcddcf5
+PODFILE CHECKSUM: bfbe8bab5f6510da85a6364cda872097b16bd151
 
 COCOAPODS: 1.9.0.beta.3

@@ -12,7 +12,7 @@ target 'Bubl' do
   pod 'Firebase/Firestore'
   pod 'DropDown'
   pod 'RSSelectionMenu'
-  pod 'SVProgressHUD'
+  pod 'JGProgressHUD'
 
 
 end
