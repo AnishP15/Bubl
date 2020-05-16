@@ -78,24 +78,24 @@ class MatchesViewController: UIViewController {
         })
         
         // code to refresh the matches
-
-        match = matchArray.randomElement()!
-        
-      
-        let mainDisplayText = "You (@\(currentUser)) should connect with @\(match) on Instagram!"
-        
-        let rangeSignUp = NSString(string: mainDisplayText).range(of: "@\(match)", options: String.CompareOptions.caseInsensitive)
-        
-        let rangeFull = NSString(string: mainDisplayText).range(of: mainDisplayText, options: String.CompareOptions.caseInsensitive)
-        
-        let attrStr = NSMutableAttributedString.init(string:mainDisplayText)
-        attrStr.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,
-                               NSAttributedString.Key.font : UIFont.init(name: "Higarino Sans", size: 17)! as Any],range: rangeFull)
-        attrStr.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,
-                               NSAttributedString.Key.font : UIFont.init(name: "Higarino Sans", size: 20)!,
-                              NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue as Any],range: rangeSignUp) // for swift 4 -> Change thick to styleThick
-        self.matchesLabel.attributedText = attrStr
-        
+        if !matchArray.isEmpty {
+            match = matchArray.randomElement()!
+            
+          
+            let mainDisplayText = "You (@\(currentUser)) should connect with @\(match) on Instagram!"
+            
+            let rangeSignUp = NSString(string: mainDisplayText).range(of: "@\(match)", options: String.CompareOptions.caseInsensitive)
+            
+            let rangeFull = NSString(string: mainDisplayText).range(of: mainDisplayText, options: String.CompareOptions.caseInsensitive)
+            
+            let attrStr = NSMutableAttributedString.init(string:mainDisplayText)
+            attrStr.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,
+                                   NSAttributedString.Key.font : UIFont.init(name: "Helvetica", size: 17)! as Any],range: rangeFull)
+            attrStr.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,
+                                   NSAttributedString.Key.font : UIFont.init(name: "Helvetica", size: 20)!,
+                                  NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue as Any],range: rangeSignUp) // for swift 4 -> Change thick to styleThick
+            self.matchesLabel.attributedText = attrStr
+        }
     }
     
     @objc func tapped() {
@@ -116,7 +116,8 @@ class MatchesViewController: UIViewController {
                 // if Instagram app is not installed, open URL inside Safari
                 let webURL = URL(string: "https://instagram.com/\(Username)")!
                 application.open(webURL)
-            }        }
+                }
+            }
     }
 
     
@@ -200,28 +201,29 @@ class MatchesViewController: UIViewController {
                             
                         }
                         
-                        self.match = self.matchArray.randomElement()!
-                            
-                        let mainDisplayText = "You (@\(self.currentUser)) should connect with @\(self.match) on Instagram!"
-                                    
-                        let rangeSignUp = NSString(string: mainDisplayText).range(of: "@\(self.match)", options: String.CompareOptions.caseInsensitive)
-                                    
-                        let rangeFull = NSString(string: mainDisplayText).range(of: mainDisplayText, options: String.CompareOptions.caseInsensitive)
-                                    
-                        let attrStr = NSMutableAttributedString.init(string:mainDisplayText)
-                                    attrStr.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,
-                                                           NSAttributedString.Key.font : UIFont.init(name: "Helvetica", size: 17)! as Any],range: rangeFull)
-                        attrStr.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,
-                                                           NSAttributedString.Key.font : UIFont.init(name: "Helvetica", size: 20)!,
-                                                          NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue as Any],range: rangeSignUp) // for swift 4 -> Change thick to styleThick
-                        self.matchesLabel.attributedText = attrStr
-                            
+                        if !self.matchArray.isEmpty {
+                            self.match = self.matchArray.randomElement()!
+                                
+                            let mainDisplayText = "You (@\(self.currentUser)) should connect with @\(self.match) on Instagram!"
+                                        
+                            let rangeSignUp = NSString(string: mainDisplayText).range(of: "@\(self.match)", options: String.CompareOptions.caseInsensitive)
+                                        
+                            let rangeFull = NSString(string: mainDisplayText).range(of: mainDisplayText, options: String.CompareOptions.caseInsensitive)
+                                        
+                            let attrStr = NSMutableAttributedString.init(string:mainDisplayText)
+                                        attrStr.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,
+                                                               NSAttributedString.Key.font : UIFont.init(name: "Helvetica", size: 17)! as Any],range: rangeFull)
+                            attrStr.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,
+                                                               NSAttributedString.Key.font : UIFont.init(name: "Helvetica", size: 20)!,
+                                                              NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue as Any],range: rangeSignUp) // for swift 4 -> Change thick to styleThick
+                            self.matchesLabel.attributedText = attrStr
+                                
 
+                            
                         
-                        
+                        }
                     }
                 }
-                
                 
         }
         
