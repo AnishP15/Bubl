@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86486BD3246335F800390018 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86486BD2246335F800390018 /* GoogleService-Info.plist */; };
 		86CDA797246F696A005BA5C6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CDA796246F696A005BA5C6 /* Account.swift */; };
 		86CDA79A246F69CB005BA5C6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CDA799246F69CB005BA5C6 /* Reachability.swift */; };
 		86F840EC2457EC70001458F4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F840EB2457EC70001458F4 /* HomeView.swift */; };
@@ -19,6 +18,7 @@
 		F813333C24690CF600464B3D /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813333B24690CF600464B3D /* NotificationNameExtension.swift */; };
 		F813692B245B602F00F3AB54 /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813692A245B602F00F3AB54 /* PopOverViewController.swift */; };
 		F813692D245B628B00F3AB54 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813692C245B628B00F3AB54 /* Shared.swift */; };
+		F83B0A752470FDDB00BF1D14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F83B0A742470FDDA00BF1D14 /* GoogleService-Info.plist */; };
 		F84E8DD0246695D30091494B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E8DCF246695D30091494B /* OnboardingViewController.swift */; };
 		F8577D50245B4C67005BBBF9 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8577D4F245B4C67005BBBF9 /* FormViewController.swift */; };
 		F87FA260246950CC00CC9FA5 /* UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87FA25F246950CC00CC9FA5 /* UITapGestureRecognizer.swift */; };
@@ -35,7 +35,6 @@
 /* Begin PBXFileReference section */
 		21020AF4828F602580AF77F3 /* Pods_Bubl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bubl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B92F3BB57ADCA0F21904738 /* Pods-Bubl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubl.debug.xcconfig"; path = "Target Support Files/Pods-Bubl/Pods-Bubl.debug.xcconfig"; sourceTree = "<group>"; };
-		86486BD2246335F800390018 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		86CDA796246F696A005BA5C6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		86CDA799246F69CB005BA5C6 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		86F840EB2457EC70001458F4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		F813333B24690CF600464B3D /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 		F813692A245B602F00F3AB54 /* PopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
 		F813692C245B628B00F3AB54 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		F83B0A742470FDDA00BF1D14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F84E8DCF246695D30091494B /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F8577D4F245B4C67005BBBF9 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		F87FA25F246950CC00CC9FA5 /* UITapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizer.swift; sourceTree = "<group>"; };
@@ -164,8 +164,8 @@
 				F87FA25F246950CC00CC9FA5 /* UITapGestureRecognizer.swift */,
 				F8A23EB92454D5280073DA2E /* Assets.xcassets */,
 				F8A23EBB2454D5280073DA2E /* LaunchScreen.storyboard */,
+				F83B0A742470FDDA00BF1D14 /* GoogleService-Info.plist */,
 				F8A23EBE2454D5280073DA2E /* Info.plist */,
-				86486BD2246335F800390018 /* GoogleService-Info.plist */,
 				F813333B24690CF600464B3D /* NotificationNameExtension.swift */,
 			);
 			path = Bubl;
@@ -232,9 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8A23EBD2454D5280073DA2E /* LaunchScreen.storyboard in Resources */,
+				F83B0A752470FDDB00BF1D14 /* GoogleService-Info.plist in Resources */,
 				F8A23EBA2454D5280073DA2E /* Assets.xcassets in Resources */,
 				F8A23EB82454D5270073DA2E /* Main.storyboard in Resources */,
-				86486BD3246335F800390018 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +457,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tech.Bubl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tech.Bubl15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -477,7 +477,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.Bubl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Bubl15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
