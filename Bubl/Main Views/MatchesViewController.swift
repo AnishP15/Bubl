@@ -20,7 +20,6 @@ enum Images {
     
 }
 
-
 class MatchesViewController: UIViewController {
 
     @IBOutlet weak var matchesLabel: UILabel!
