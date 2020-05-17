@@ -245,7 +245,7 @@ class MatchesViewController: UIViewController {
         view.layer.addSublayer(self.emitter)
         
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             self.emitter.removeFromSuperlayer()
             
         })

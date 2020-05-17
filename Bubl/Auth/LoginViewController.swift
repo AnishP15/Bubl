@@ -20,6 +20,13 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email address",
+                                                                  attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        emailTextField.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password",
+                                                                     attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        passwordTextField.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+
         // Do any additional setup after loading the view.
     }
 

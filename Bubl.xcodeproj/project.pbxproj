@@ -19,6 +19,8 @@
 		F813692B245B602F00F3AB54 /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813692A245B602F00F3AB54 /* PopOverViewController.swift */; };
 		F813692D245B628B00F3AB54 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813692C245B628B00F3AB54 /* Shared.swift */; };
 		F83B0A752470FDDB00BF1D14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F83B0A742470FDDA00BF1D14 /* GoogleService-Info.plist */; };
+		F83B0A772471143800BF1D14 /* tosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B0A762471143800BF1D14 /* tosViewController.swift */; };
+		F83B0A792471144900BF1D14 /* privacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B0A782471144900BF1D14 /* privacyPolicyViewController.swift */; };
 		F84E8DD0246695D30091494B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E8DCF246695D30091494B /* OnboardingViewController.swift */; };
 		F8577D50245B4C67005BBBF9 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8577D4F245B4C67005BBBF9 /* FormViewController.swift */; };
 		F87FA260246950CC00CC9FA5 /* UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87FA25F246950CC00CC9FA5 /* UITapGestureRecognizer.swift */; };
@@ -47,6 +49,8 @@
 		F813692A245B602F00F3AB54 /* PopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
 		F813692C245B628B00F3AB54 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		F83B0A742470FDDA00BF1D14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F83B0A762471143800BF1D14 /* tosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tosViewController.swift; sourceTree = "<group>"; };
+		F83B0A782471144900BF1D14 /* privacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = privacyPolicyViewController.swift; sourceTree = "<group>"; };
 		F84E8DCF246695D30091494B /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F8577D4F245B4C67005BBBF9 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		F87FA25F246950CC00CC9FA5 /* UITapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizer.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 				86F840F32457F5D4001458F4 /* Auth */,
 				F8A23EB62454D5270073DA2E /* Main.storyboard */,
 				F87FA25F246950CC00CC9FA5 /* UITapGestureRecognizer.swift */,
+				F83B0A762471143800BF1D14 /* tosViewController.swift */,
+				F83B0A782471144900BF1D14 /* privacyPolicyViewController.swift */,
 				F8A23EB92454D5280073DA2E /* Assets.xcassets */,
 				F8A23EBB2454D5280073DA2E /* LaunchScreen.storyboard */,
 				F83B0A742470FDDA00BF1D14 /* GoogleService-Info.plist */,
@@ -290,6 +296,7 @@
 				86CDA797246F696A005BA5C6 /* Account.swift in Sources */,
 				86F840EE2457EE33001458F4 /* RoundButton.swift in Sources */,
 				F87FA260246950CC00CC9FA5 /* UITapGestureRecognizer.swift in Sources */,
+				F83B0A792471144900BF1D14 /* privacyPolicyViewController.swift in Sources */,
 				F8A23EB52454D5270073DA2E /* LoginViewController.swift in Sources */,
 				F8D8F4AF245D1DF400A9474C /* MatchesViewController.swift in Sources */,
 				F8A23EB12454D5270073DA2E /* AppDelegate.swift in Sources */,
@@ -298,6 +305,7 @@
 				F8577D50245B4C67005BBBF9 /* FormViewController.swift in Sources */,
 				F84E8DD0246695D30091494B /* OnboardingViewController.swift in Sources */,
 				F813692B245B602F00F3AB54 /* PopOverViewController.swift in Sources */,
+				F83B0A772471143800BF1D14 /* tosViewController.swift in Sources */,
 				F813333C24690CF600464B3D /* NotificationNameExtension.swift in Sources */,
 				86F840EC2457EC70001458F4 /* HomeView.swift in Sources */,
 				86F8410D2457F842001458F4 /* UIColor.swift in Sources */,

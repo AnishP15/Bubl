@@ -21,11 +21,12 @@ class PopOverViewController: UIViewController, UITableViewDelegate, UITableViewD
     var personalityType: String?
        override func viewDidLoad() {
            super.viewDidLoad()
+        
            
            cancelButton.layer.borderColor = #colorLiteral(red: 0.02608692087, green: 0.7744804025, blue: 0.6751230955, alpha: 1)
            tableView.dataSource = self
            tableView.delegate = self
-        
+            self.tableView.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
           // Apply radius to Popupview
           // Popupview.layer.cornerRadius = 10
           // Popupview.layer.masksToBounds = true

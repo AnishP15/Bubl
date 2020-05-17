@@ -33,7 +33,7 @@ class Account: UITableViewController {
         
         retrieveUserInformation()
         
-        hud.dismiss(afterDelay: 1.5)
+        hud.dismiss(afterDelay: 1)
     }
 
     func retrieveUserInformation() {
